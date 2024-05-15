@@ -14,8 +14,8 @@
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Emanuel Dumitru-Popescu
+ * @date 14 may 2024
  *
  */
 #ifndef __STATS_H__
@@ -24,17 +24,77 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Prints statistics of the array, minimum,
+ *        maximum and median
  *
- * <Add Extended Description Here>
+ * 
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param arr       array for which statistics should be printed
+ * @param arr_size  size of the given array, i.e number of elements
  *
- * @return <Add Return Informaiton here>
+ * @return returns nothing
  */
+void print_statistics(unsigned char arr[], unsigned int arr_size);
+
+/**
+ * @brief Prints the elements of an array
+ * 
+ * @param arr       array for which statistics should be printed
+ * @param arr_size  size of the given array, i.e number of elements
+ * 
+ * @return returns nothing
+*/
+void print_array(unsigned char arr[], unsigned int arr_size);
+
+/**
+ * @brief Finds median of an array
+ * 
+ * @param arr       array for which statistics should be printed
+ * @param arr_size  size of the given array, i.e number of elements
+ * 
+ * @return median value
+*/
+unsigned char find_median(unsigned char arr[], unsigned int arr_size);
+
+/**
+ * @brief Finds mean of an array
+ * 
+ * @param arr       array for which statistics should be printed
+ * @param arr_size  size of the given array, i.e number of elements
+ * 
+ * @return mean value
+*/
+unsigned char find_mean(unsigned char arr[], unsigned int arr_size);
+
+/**
+ * @brief Finds maximum of an array
+ * 
+ * @param arr       array for which statistics should be printed
+ * @param arr_size  size of the given array, i.e number of elements
+ * 
+ * @return maximum value
+*/
+unsigned char find_maximum(unsigned char arr[], unsigned int arr_size);
+
+/**
+ * @brief Finds minimum of an array
+ * 
+ * @param arr       array for which statistics should be printed
+ * @param arr_size  size of the given array, i.e number of elements
+ * 
+ * @return minimum value
+*/
+unsigned char find_minimum(unsigned char arr[], unsigned int arr_size);
+
+/**
+ * @brief Sorts an array
+ * 
+ * @param arr       array for which statistics should be printed
+ * @param arr_size  size of the given array, i.e number of elements
+ * 
+ * @return nothing
+*/
+void sort_array(unsigned char arr[], unsigned int arr_size);
 
 
 #endif /* __STATS_H__ */
