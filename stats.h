@@ -50,6 +50,7 @@ void print_array(unsigned char arr[], unsigned int arr_size);
  * @brief Finds median of an array
  * 
  * @param arr       array for which statistics should be printed
+ *                  !!!CAUTION!!! array must be sorted
  * @param arr_size  size of the given array, i.e number of elements
  * 
  * @return median value
